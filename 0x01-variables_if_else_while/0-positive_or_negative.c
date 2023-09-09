@@ -4,8 +4,8 @@
 /*
  * main: Entry Point
  *
- * Description: check if the input number is positive or negative
- *
+ * description: 'check if the input number is positive or negative'
+ * 
  * Return: Always 0(Success)
 */
 int main(void)
@@ -22,7 +22,7 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	else 
+	else
 	{
 		printf("%d is negative\n", n);
 	}
