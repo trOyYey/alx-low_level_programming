@@ -2,11 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * main: Entry Point
+ * main - Entry Point
  *
- * description: 'check if the input number is positive or negative'
- * 
- * Return: Always 0(Success)
+ * Description: positive or negative
+ *
+ * Return: Always 0 (Success)
 */
 int main(void)
 {
