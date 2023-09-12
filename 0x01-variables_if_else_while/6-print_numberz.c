@@ -10,9 +10,9 @@ int main(void)
 {
 	int digit = 0;
 
-	while (digit <=9)
+	while (digit <= 9)
 	{
-		/* converting digit to ASCII to let the code calculate ASSCI numbers for letters*/
+		/* converting digit to ASCII based*/
 		putchar(digit + '0');
 		digit++;
 	}
