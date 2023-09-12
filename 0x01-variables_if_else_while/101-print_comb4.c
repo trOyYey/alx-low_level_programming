@@ -11,7 +11,7 @@ int main(void)
 	int digit1 = 0;
 	int digit2, digit3;
 
-	while (digit1 <= 9i)
+	while (digit1 <= 9)
 	{
 		digit2 = 0;
 		while (digit2 <= 9)
@@ -30,15 +30,15 @@ int main(void)
 
 					if (digit1 + digit2 + digit3 != 24)
 					{
-						putchar(',')
-						putchar(' ')
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			digit3++;
 		}
 		digit2++;
 	}
-	digit1++
+	digit1++;
 }
 putchar('\n');
 
