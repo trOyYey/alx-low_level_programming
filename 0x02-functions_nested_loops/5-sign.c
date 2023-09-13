@@ -2,6 +2,7 @@
 
 /**
  * print_sign - print sign of number
+ * @n : takes integer type input for function.
  * Return: 1 if + 0if 0 and -1 if -
  */
 
@@ -16,8 +17,8 @@ int print_sign(int n)
 	{
 		_putchar(48);
 		return (0);
-	}
-	else 
+		}
+	else
 	{
 		_putchar(45);
 		return(-1);
