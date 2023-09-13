@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alhabet - Printing alpbabets using _putchar
+ * print_alphabet - Printing alpbabets using _putchar
  * Return: Always 0
  */
 
