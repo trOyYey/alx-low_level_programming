@@ -2,7 +2,7 @@
 
 /**
  * main - Entry Point
- * Descriptions: printing alphabet by _putchar function
+ * Description: printing alphabet by _putchar function
  * Return: Always 0
  */
 
