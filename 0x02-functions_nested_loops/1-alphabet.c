@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry Point
- * Description: Printing albabets using _putchar
+ * print_alhabet - Printing alpbabets using _putchar
  * Return: Always 0
  */
 
