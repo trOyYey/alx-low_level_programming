@@ -4,7 +4,6 @@
 /**
  * print_times_table - function that prints times table of a an input
  * @n: input value
- * Return: results
  */
 
 void print_times_table(int n)
