@@ -12,7 +12,7 @@ int main(void)
 
 	for (numb = 0; numb < 1024; numb++)
 	{
-		if ((numb % 3 == 0) || (num % 5 == 0))
+		if ((numb % 3 == 0) || (numb % 5 == 0))
 			sum += numb;
 	}
 	printf("%d\n", sum);
