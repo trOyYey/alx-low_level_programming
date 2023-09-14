@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_times_table - function that prints times table of a an input
+ * print_times_table - function that prints times table of n
  * @n: input value
  */
 
