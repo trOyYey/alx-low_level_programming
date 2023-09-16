@@ -2,10 +2,10 @@
 
 /**
  * main - print numbers from 1 - 100 followed by new line
- * 		numbers that are multiples of 3 print Fizz
- * 		numbers that are multiples of 5 print Buzz
- * 		numbers that are multiples of 3 and 5 print FizzBuzz
- *
+*		numbers that are multiples of 3 print Fizz
+*		numbers that are multiples of 5 print Buzz
+*		numbers that are multiples of 3 and 5 print FizzBuzz
+*
  * Return: Always 0 (Success)
  */
 
@@ -21,11 +21,11 @@ int main(void)
 			printf("Buzz");
 		else if (n % 3 == 0 && n % 5 == 0)
 			printf("FizzBuzz");
-		else 
+		else
 			printf("%d", n);
 		if (n != 100)
 			printf(" ");
-		else 
+		else
 			printf("\n");
 	}
 	return (0);
