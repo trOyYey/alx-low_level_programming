@@ -2,8 +2,8 @@
 
 /**
  * swap_int - function that swaps value of two integers
- * @*a: input1
- * @*b: input2
+ * @a: input1
+ * @b: input2
  *Return: nothin
  */
 
