@@ -9,7 +9,7 @@
 
 int isLower(char c)
 {
-	Return(c >= 97 && c <= 122);
+	return (c >= 97 && c <= 122);
 }
 
 /**
@@ -47,7 +47,7 @@ char *cap_string(char *s)
 		else if (isLower(*s) && foundDelimit)
 		{
 			*s -= 32;
-			founddelimit = 0;
+			foundDelimit = 0;
 		}
 		else
 			foundDelimit = 0;
