@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * isLower - determines wether ascii is lowecase
+ *isLower - determines wether ascii is lowecase
  * @c: character
- * Return : 1 if true 0 if not
+ * Return: 1 if true 0 if not
  */
 
 int isLower(char c)
