@@ -2,9 +2,9 @@
 
 /**
  * *_memset - function that fills memory with constant byte
- *@s:
- *@b: 
- *@n: 
+ *@s: pointer to put the constant
+ *@b: constant
+ *@n: max bytes to use
  *Return: pointer s
  */
 
