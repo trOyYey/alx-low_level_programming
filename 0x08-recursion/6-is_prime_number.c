@@ -4,6 +4,7 @@
 /**
  * is_prime_number - function that checks if input is prime number
  * @n: input
+ * @n2: 2nd input
  * Return: 1 if true, 0 otherwise
  */
 
