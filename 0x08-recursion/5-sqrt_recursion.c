@@ -3,6 +3,7 @@
 /**
  * _sqrt_recursion - function that returns the natural sqare root of a number
  * @n: input
+ * @v: square root value
  * Return: return 1 if n doesn't have natural sqare root, or
 *			natural sqare root of an input
 */
@@ -20,12 +21,12 @@ int _sqrt_recursion(int n)
  * Return: results of square root calculating as int
  */
 
-int square (int n, int v)
+int square(int n, int v)
 {
 	if (v * v == n)
 		return (v);
 	else if (v * v < n)
-		return (square (n, v + 1));
-	else 
+		return (square(n, v + 1));
+	else
 		return (-1);
 }
