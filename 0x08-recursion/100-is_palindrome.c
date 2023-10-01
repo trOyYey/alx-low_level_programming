@@ -28,6 +28,8 @@ int compare(char *s, int first, int last, int M);
 
 /**
  * is_palindrome - function that returns 1 if string is a palindrome
+ *@s: pointer
+ *Return: 1 if success
  */
 
 int is_palindrome(char *s)
