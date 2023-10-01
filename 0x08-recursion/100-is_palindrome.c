@@ -25,6 +25,11 @@ int last_index(char *s)
 }
 
 int compare(char *s, int first, int last, int M);
+
+/**
+ * is_palindrome - function that returns 1 if string is a palindrome
+ */
+
 int is_palindrome(char *s)
 {
 	int last = last_index(s);
