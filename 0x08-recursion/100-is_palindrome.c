@@ -25,7 +25,7 @@ int last_index(char *s)
 }
 
 int compare(char *s, int first, int last, int M);
-int is palindrome(char *s)
+int is_palindrome(char *s)
 {
 	int last = last_index(s);
 
@@ -43,7 +43,7 @@ int is palindrome(char *s)
 
 int compare(char *s, int first, int last, int M)
 {
-	if ((first == last && M != 0 || ((first == last + 1 && M == 0))
+	if ((first == last && M != 0) || (first == last + 1 && M == 0))
 		return (1);
 	else if (s[first] != s[last]
 		return (0);
