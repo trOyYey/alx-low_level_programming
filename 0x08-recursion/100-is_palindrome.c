@@ -48,5 +48,5 @@ int compare(char *s, int first, int last, int M)
 	else if (s[first] != s[last])
 		return (0);
 	else
-		return (compare(s, first + 1, end - 1, M));
+		return (compare(s, first + 1, last - 1, M));
 }
