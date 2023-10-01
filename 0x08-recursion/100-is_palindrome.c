@@ -45,7 +45,7 @@ int compare(char *s, int first, int last, int M)
 {
 	if ((first == last && M != 0) || (first == last + 1 && M == 0))
 		return (1);
-	else if (s[first] != s[last]
+	else if (s[first] != s[last])
 		return (0);
 	else
 		return (compare(s, first + 1, end - 1, M));
