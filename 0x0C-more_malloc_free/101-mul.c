@@ -1,18 +1,20 @@
 #include "main.h"
+
 /**
- * * _puts - function that prints a string followed by a new line
+ * _puts - function that prints a string followed by a new line
  * @str: pointer
  * Return: nothin or void
  */
 
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int i = 0;
+
+	while (str[i])
 	{
-		_putchar(*str + 0);
-		str++;
+		_putchar(str[i]);
+		i++;
 	}
-	_putchar('\n');
 }
 /**
  * _atoi - function that converts a string to an integer
@@ -20,7 +22,7 @@ void _puts(char *str)
  *Return: result
  */
 
-int _atoi(char *s)
+int _atoi(const char *s)
 {
 	unsigned int num = 0;
 	int sign = 1;
