@@ -59,6 +59,13 @@ void print_int(unsigned long int n)
 	}
 }
 
+/**
+ * main - program that multiplies two positives numbers
+ * @argc: counter of strings
+ * @argv: strings
+ * Return: 0
+ */
+
 int main(int argc, char const *argv[])
 {
 	(void)argc;
