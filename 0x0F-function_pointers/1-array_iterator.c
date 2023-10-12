@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * void array_iterator - function that executes a function given
+ * array_iterator - function that executes a function given
 *			as a parameter on each element of an array
 * @array: int
 * @size: size_t
@@ -13,7 +13,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	int *ending = array + size - 1;
 
-	if ( array && size && action)
+	if (array && size && action)
 		while (array <= ending)
 			action(*array++);
 }
