@@ -9,7 +9,7 @@
 
 void character_format(char *separator, va_list P)
 {
-	printf("%s%c", separator, va_list(P, int));
+	printf("%s%c", separator, va_arg(P, int));
 }
 
 /**
@@ -33,7 +33,7 @@ void int_format(char *separator, va_list P)
 
 void float_format(char *separator, va_list P)
 {
-	printf("%s%f", separator, va_argv(P, double));
+	printf("%s%f", separator, va_arg(P, double));
 }
 
 /**
@@ -88,5 +88,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
-	va_end(ap);
+	va_end(P);
 }
