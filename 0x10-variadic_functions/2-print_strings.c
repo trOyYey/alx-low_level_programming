@@ -3,7 +3,7 @@
 /**
  * print_strings - function that prints strings followed by new line
  * @separator: const char
- * @n const unigned int
+ * @n: const unigned int
  * Return: voidin
  */
 
@@ -13,7 +13,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *s;
 	int i = n;
 
-	if(n <= 0)
+	if (n <= 0)
 	{
 		printf("\n");
 		return;
