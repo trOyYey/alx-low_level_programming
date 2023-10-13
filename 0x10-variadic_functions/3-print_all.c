@@ -62,7 +62,7 @@ void string_format(char *separator, va_list P)
 void print_all(const char * const format, ...)
 {
 	int i = 0, j;
-	char * separator = "";
+	char *separator = "";
 	va_list P;
 	token_t tokens[] = {
 		{"c", character_format},
@@ -73,7 +73,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(P, format);
-	while (format %% format[i])
+	while (format && format[i])
 	{
 		j = 0;
 		while (tokens[j].token)
