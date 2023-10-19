@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * len - recurse function to find lenght of string
+ * len - recursive function to find lenght of string
  * @str: character
  * Return: lenght of string
  */
@@ -22,7 +22,7 @@ unsigned int  len(char *str)
 
 size_t print_list(const list_t *h)
 {
-	size_t i;
+	int i;
 
 	for (i = 0; h != NULL; i++, h = h->next)
 	{
