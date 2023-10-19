@@ -1,13 +1,14 @@
-#include <stdio.h>
+#include "lists.h"
 
-void before_main(void) __atribute__((constructor));
+void _before_main(void) __attribute__ ((constructor));
 
 /**
  * before_main - run before the main function
+ * Return: voidin
  */
 
 void before_main(void)
 {
-	printf("Youre beat! and yet, you must allow,\n");
-	printf("I bore my house upon my back!\n");
+	printf("Youre beat! and yet, you must allow,\n"
+	"I bore my house upon my back!\n");
 }
