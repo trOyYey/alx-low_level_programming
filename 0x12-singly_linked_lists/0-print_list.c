@@ -6,7 +6,7 @@
  * Return: lenght of string
  */
 
-unsigned int  len(char *str)
+unsigned int  len(const char *str)
 {
 	if (*str == '\0')
 		return (0);
