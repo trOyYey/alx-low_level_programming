@@ -11,7 +11,7 @@ unsigned int  len(char *str)
 	if (*str == '\0')
 		return (0);
 	else
-		return (1 + Len(str + 1));
+		return (1 + len(str + 1));
 }
 
 /**
