@@ -4,7 +4,7 @@
  * delete_nodeint_at_index - deletes the node at index
  * @head: pointer of pointer to linked list
  * @index: unsigned int
- * Return: 1 if succeeeded -1 if not 
+ * Return: 1 if succeeeded -1 if not
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
