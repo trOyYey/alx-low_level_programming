@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * sum_listint - sum of all the data n of a linked list
@@ -15,5 +15,5 @@ int sum_listint(listint_t *head)
 		result += head->n;
 		head = head->next;
 	}
-	return (sum);
+	return (result);
 }
