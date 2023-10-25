@@ -12,7 +12,7 @@ int pop_listint(listint_t **head)
 	int i;
 
 	if (!*head || !head)
-		return (NULL);
+		return (0);
 
 	tmp = (*head)->next;
 	i = (*head)->n;
