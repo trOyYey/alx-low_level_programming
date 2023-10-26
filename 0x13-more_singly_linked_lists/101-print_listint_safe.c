@@ -1,13 +1,15 @@
 #include "lists.h"
 
 /**
- * re_alloc_array - allocates memory for array of pointers in linked list
+ * _re_alloc_array - allocates memory for array of pointers in linked list
  * @size: new size of list
  * @list: last list
  * @new_node: new node to insert ino the linked list
+ * Return: pointer
  */
 
-const listint_t **_re_alloc_array(const listint_t **list, size_t size, const listint_t *new_node)
+const listint_t **_re_alloc_array(const listint_t **list
+		, size_t size, const listint_t *new_node)
 {
 	size_t i;
 	const listint_t **tmp;
