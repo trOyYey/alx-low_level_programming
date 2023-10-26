@@ -7,12 +7,12 @@
  * @new_node: new node to insert ino the linked list
  */
 
-const listint_t **re_alloc_array(cont listint_t **list, size_t size, const listint_t *new_node)
+const listint_t **_re_alloc_array(const listint_t **list, size_t size, const listint_t *new_node)
 {
-	size_t;
+	size_t i;
 	const listint_t **tmp;
 
-	tmp1 = malloc(size * sizeof(listint_t *));
+	tmp = malloc(size * sizeof(listint_t *));
 	if (tmp == NULL)
 	{
 		free(list);
@@ -48,7 +48,7 @@ size_t print_listint_safe(const listint_t *head)
 			}
 		}
 		itr++;
-		temp = re_alocc_array(temp, itr, head);
+		temp = _re_alloc_array(temp, itr, head);
 		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 	}
