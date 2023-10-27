@@ -16,7 +16,7 @@ unsigned int binary_to_uint(const char *b)
 	while (b[i])
 	{
 		bin = bin << 1;
-		if (*b[i] > '9' && *b[i] < '0')
+		if (b[i] > '9' && b[i] < '0')
 			return (0);
 		bin = bin + (b[i] - '0');
 		i++;
