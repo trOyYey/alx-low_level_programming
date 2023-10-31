@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <fcmtl.h>
+#include <fcntl.h>
 #include <unistd.h>
 
 #define READ_BUFF_SIZE 1024
