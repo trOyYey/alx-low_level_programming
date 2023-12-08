@@ -2,7 +2,7 @@
 
 /**
  * add_dnodeint - adds new node at start
- * @h: head
+ * @head: head
  * @n: stored int
  * Return: address of new node, or NULL
  */
