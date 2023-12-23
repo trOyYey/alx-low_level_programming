@@ -11,7 +11,7 @@ void hash_table_print(const hash_table_t *ht)
 	int p = 0;
 
 	if (ht == NULL)
-		return ;
+		return;
 	putchar('{');
 	for (x = 0; x < ht->size; x++)
 	{
@@ -25,7 +25,7 @@ void hash_table_print(const hash_table_t *ht)
 }
 
 /**
- * print_node - prints hash nodes
+ * print_hash_node - prints hash nodes
  * @head: ponter to linked list
  * @p: pointer
  * Return: 0 if succ 1 otherwise
