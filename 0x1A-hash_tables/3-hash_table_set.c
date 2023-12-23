@@ -15,7 +15,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!ht || !key || strlen(key) == 0)
 		return (0);
 	x = key_index((const unsigned char *)key, ht->size);
-	if (add_hash_node(&ht->array[i], key, value))
+	if (add_hash_node(&ht->array[x], key, value))
 		return (0);
 	return (1);
 }
