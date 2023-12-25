@@ -10,14 +10,14 @@
 shash_table_t *shash_table_create(unsigned long int size)
 {
 	unsigned long int x;
-	shash_table_t *sorted_ht = malloc(sizeof(hash_table_t));
+	shash_table_t *sorted_ht = malloc(sizeof(shash_table_t));
 
 	if (!sorted_ht)
 		return (NULL);
 	sorted_ht->size = size;
 	sorted_ht->shead = NULL;
 	sorted_ht->stail = NULL;
-	sorted_ht->array = malloc(sizeof(hash_node_t *) * size);
+	sorted_ht->array = malloc(sizeof(shash_node_t *) * size);
 	if (!sorted_ht->array)
 	{
 		free(sorted_ht);
@@ -40,20 +40,24 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	shash_node_t *temp, *sorted_hn;
 	unsigned long int idx;
+	char *tempo_value;
 
 	if (!ht || !ht->array || ht->size == 0 || value == NULL || strlen(key) == 0 || key == NULL)
 		return (0);
 	idx = key_index((const unsigned char *)key, ht->size);
-	for (temp = ht->array[idx]; temp; temp = temp->next)
+	temp = ht->array[idx];
+	while (temp)
 	{
-		if (!strcmp(key, temp->key))
+		if (strcmp(key, temp->key) == 0)
 		{
-			free(temp->value);
-			temp->value = strdup(value);
-			if (!temp->value)
+			tempo_value = strdup(value);
+			if (tempo_value == NULL)
 				return (0);
+			free(temp->value);
+			temp->value = tempo_value;
 			return (1);
 		}
+		temp = temp->next;
 	}
 	sorted_hn = malloc(sizeof(shash_node_t));
 	if (!sorted_hn)
