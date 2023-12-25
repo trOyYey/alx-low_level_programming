@@ -1,16 +1,16 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_create - creates hash_table
+ * shash_table_create - creates hash_table
  * @size: size of hash table array
  *
  * Return: pointer to the new table or NULL
  */
 
-hash_table_t *hash_table_create(unsigned long int size)
+shash_table_t *shash_table_create(unsigned long int size)
 {
 	unsigned long int x;
-	hash_table_t *sorted_ht = malloc(sizeof(hash_table_t));
+	shash_table_t *sorted_ht = malloc(sizeof(hash_table_t));
 
 	if (!sorted_ht)
 		return (NULL);
@@ -41,7 +41,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	shash_node_t *temp, *sorted_hn;
 	unsigned long int idx;
 
-	if (!ht || !ht->array || hti->size == 0 || value == NULL || strlen(key) == 0 || key == NULL)
+	if (!ht || !ht->array || ht->size == 0 || value == NULL || strlen(key) == 0 || key == NULL)
 		return (0);
 	idx = key_index((const unsigned char *)key, ht->size);
 	for (temp = ht->array[idx]; temp; temp = temp->next)
@@ -57,19 +57,19 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	}
 	sorted_hn = malloc(sizeof(shash_node_t));
 	if (!sorted_hn)
-		return (NULL);
+		return (0);
 	sorted_hn->value = strdup(value);
 	if (!sorted_hn->value)
 	{
 		free(sorted_hn);
-		return (NULL);
+		return (0);
 	}
 	sorted_hn->key = strdup(key);
 	if (!sorted_hn->key)
 	{
 		free(sorted_hn->value);
 		free(sorted_hn);
-		return (NULL);
+		return (0);
 	}
 	sorted_hn->next = ht->array[idx], sorted_hn->snext = sorted_hn->sprev = NULL;
 	ht->array[idx] = sorted_hn;
