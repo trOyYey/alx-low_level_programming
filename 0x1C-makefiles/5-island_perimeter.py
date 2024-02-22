@@ -19,6 +19,7 @@ def calculate_perimeter(y, x, grid):
         perimeter += 1
     return perimeter
 
+
 def island_perimeter(grid):
     '''
     function that returns the perimeter of the
