@@ -6,7 +6,8 @@ island_perimeter function mod
 
 def calculate_perimeter(y, x, grid):
     '''
-    calculate the perimeter of singular square at a time
+    calculate the perimeter of
+    singular square at a time
     '''
     perimeter = 0
     if x == 0 or grid[y][x - 1] == 0:
