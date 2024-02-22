@@ -1,0 +1,37 @@
+# CC used as compiler as variable
+CC = gcc
+
+# SRC variable contains all files to compile
+SRC = main.c school.c
+
+# NAME of final executable file
+NAME = school
+
+# CFLAGS compilation option flags
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# OBJ contains all of SRC files as .o files
+OBJ = ${SRC:.c=.o}
+
+# all used to build the executable
+.PHONY : all
+all: m.h ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+
+# clean deletes Vim-Emacs temps and executable
+.PHONY : clean
+clean:
+	$(RM) *~ ${NAME}
+
+# oclean: removes or deletes object files only
+.PHONY : oclean
+oclean:
+	${RM} ${OBJ}
+
+# fclean: deletes or removes Vim-Emac temps with executable and objects
+.PHONY : fclean
+fclean: clean oclean
+
+# re: forces recompilation of all source files
+.PHONY : re
+re: oclean all
