@@ -1,0 +1,12 @@
+# CC used as compiler as variable
+CC = gcc
+
+# SRC variable contains all files to compile
+SRC = main.c school.c
+
+# all used to build the executable
+all: school
+
+# compiling main.c - school.c
+school: ${SRC}
+	${CC} $^ -o $@
