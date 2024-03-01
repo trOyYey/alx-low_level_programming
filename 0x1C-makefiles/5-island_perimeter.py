@@ -26,13 +26,13 @@ def island_perimeter(grid):
     function that returns the perimeter of the
     given 0'sand 1's in a list of lists
     """
-    if grid is None or type(grid) != list:
+    if grid is None or type(grid) is not list:
         return 0
     for var_list in grid:
-        if type(var_list) != list:
+        if type(var_list) is not list:
             return 0
         for var_id in var_list:
-            if type(var_id) != int:
+            if type(var_id) is not int:
                 return 0
     perimeter = 0
     for y in range(len(grid)):
