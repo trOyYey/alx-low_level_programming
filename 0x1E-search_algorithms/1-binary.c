@@ -25,6 +25,7 @@ void print_list(int *array, size_t first, size_t last)
  * @first: first index in the array to search
  * @last: last index in the array to search
  * @value: the value to search for
+ * Return: recursively mid or -1
  */
 
 int recursive_binary(int *array, size_t first, size_t last, int value)
@@ -35,11 +36,11 @@ int recursive_binary(int *array, size_t first, size_t last, int value)
 		return (-1);
 	print_list(array, first, last);
 	if (array[mid] == value)
-		return mid;
+		return (mid);
 	else if (array[mid] > value)
-		return recursive_binary(array, first, mid - 1, value);
+		return (recursive_binary(array, first, mid - 1, value));
 	else
-		return recursive_binary(array, mid + 1, last, value);
+		return (recursive_binary(array, mid + 1, last, value));
 }
 
 /**
