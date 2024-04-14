@@ -22,16 +22,16 @@ listint_t *iterate_list(listint_t *list, size_t step)
 
 /**
  * jump_list - jump search function in single linked list
- * @array: pointer to the array
+ * @list: pointer to the array
  * @size: size o the array
  * @value: the value to search for
- * Return: if found index of the value or -1
+ * Return: if found index of the value or NULL
  */
 
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
 	listint_t *i, *j;
-       	size_t step = (size_t) sqrt(size);
+	size_t step = (size_t) sqrt(size);
 
 	if (list == NULL)
 		return (NULL);
